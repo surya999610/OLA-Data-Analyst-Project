@@ -1,84 +1,131 @@
-# OLA Data Analyst Project
-## Project Objective
-Analyzed Ola ride data to uncover trends and insights for improving operations, pricing, and customer experience.
+# 🚖 OLA Data Analyst Project  
 
-## Dataset used
-- <a href="https://github.com/surya999610/OLA-Dashboard/blob/main/OLA%20Dataset.csv"> Dataset <a/>
+![Dashboard Preview](images/Ola%20DA%20Project%20DEMO.gif)
 
-## PowerBI Questions
-- Ride Volume Over Time
-- Booking Status Breakdown
-- Top 5 Vehicle Types by Ride Distance
-- Average Customer Ratings by Vehicle Type
-- cancelled Rides Reasons
-= Revenue by Payment Method
-- Top 5 Customers by Total Booking Value
-- Ride Distance Distribution Per Day
-- Driver Ratings Distribution
-- Customer vs. Driver Ratings
-  
-## Download Dashboard 
-- <a href="https://github.com/surya999610/OLA-Dashboard/blob/main/OLA%20Data%20Analysis%20Dashboard.pbit"> Dashboard <a/>
+## 📌 Project Overview  
+This project focuses on analyzing ride-booking data from OLA to extract meaningful business insights. Using **SQL and Power BI**, the project uncovers patterns in ride demand, cancellations, customer behavior, and revenue generation.  
 
-## SQL Questions
-- Retrieve all successful bookings:
-- Find the average ride distance for each vehicle type:
-- Get the total number of cancelled rides by customers:
-- List the top 5 customers who booked the highest number of rides:
-- Get the number of rides cancelled by drivers due to personal and car-related issues:
-- Find the maximum and minimum driver ratings for Prime Sedan bookings:
-- Retrieve all rides where payment was made using UPI:
-- Find the average customer rating per vehicle type:
-- Calculate the total booking value of rides completed successfully:
-- List all incomplete rides along with the reason:
+The goal is to simulate a **real-world data analyst workflow** — from raw data to actionable insights and interactive dashboards.
 
-## SQL Queries
-- <a href="https://github.com/surya999610/OLA-Dashboard/blob/main/OLA.sql"> Queries <a/>
+---
 
-## Dashboard
+## 🎯 Objectives  
 
-<img width="1743" height="737" alt="OLA Sheet 1" src="https://github.com/user-attachments/assets/d63040ea-35cd-4a34-8e94-05a4309ff6f6" />
-<img width="1732" height="738" alt="OLA Sheet 2" src="https://github.com/user-attachments/assets/825a061e-8407-4f12-91b3-596bd28d149a" />
-<img width="1740" height="739" alt="OLA Sheet 3" src="https://github.com/user-attachments/assets/0701d16e-7735-4a29-9427-d389843c7a46" />
-<img width="1740" height="737" alt="OLA Sheet 4" src="https://github.com/user-attachments/assets/b7153ce5-1442-4e45-903d-0f052fd931f4" />
-<img width="1745" height="742" alt="OLA Sheet 5" src="https://github.com/user-attachments/assets/4376b297-8efe-4654-8f38-fd5938a0d589" />
+- Analyze ride booking trends and peak demand periods  
+- Understand cancellation patterns (customer vs driver)  
+- Identify top customers and revenue contributors  
+- Evaluate vehicle performance and ride distribution  
+- Analyze payment methods and revenue breakdown  
+- Build an interactive dashboard for business decision-making  
 
-## Projecct insight
-### Booking Status:
-- Successful rides: 12,652 (62%)
-- Canceled by Driver: 3,654 (18%)
-- Canceled by Customer: 2,081 (10%)
-- Driver Not Found: 2,020 (10%)
+---
 
-### Vehicle Preference:
-- Most popular: eBike, Bike, Prime Sedan, Prime SUV (all ~3k rides each).
-- Least used: Mini & Prime Plus (~2.8k rides each).
+## 🛠️ Tech Stack  
 
-### Payment Methods (Successful Rides):
-- Cash (55%) and UPI (41%) dominate.
-- Very few customers use Credit/Debit cards.
+- **SQL (MySQL)** → Data querying & transformation  
+- **Power BI** → Data visualization & dashboard creation  
+- **Excel/CSV** → Data source  
+- **DAX** → KPI calculations & measures  
 
-### Ride Distance & Fare:
-- Average ride distance: 14.1 km
-- Average booking value: ₹546
-- Indicates higher spending on medium-long trips.
+---
 
-### Customer & Driver Ratings:
-- Avg. Driver rating ~ 4.0/5
-- Avg. Customer rating ~ 4.0/5
-- Suggests overall balanced satisfaction.
-
-### Cancellations & Issues:
-- High cancellations by drivers (often due to personal/car issues).
-- Customers mostly cancel when drivers don’t move towards pickup.
-
-## Final Conclusion
-- High cancellation rates (38%) are a major concern — impacting customer experience and driver efficiency.
-- Two-wheeler rides (Bike/eBike) are as popular as cars, showing demand for affordable and quick mobility options.
-- Cash and UPI dominate digital transactions, while card usage is very low.
-- Average ride distance (~14 km) suggests Ola is frequently used for medium-range city commutes.
-- Ratings (≈4.0/5) indicate customers and drivers are moderately satisfied, but improvements are needed in reliability and cancellation management.
+## 📂 Project Structure  
+```
+OLA-Data-Analyst-Project/
+│── 📁 images/ # Dashboard screenshots & demo
+│── 📄 Bookings.csv # Dataset used for analysis
+│── 📄 Ola Data Analyst Project SQL.sql # SQL queries & views
+│── 📄 Ola Data Analyst Project.pbix # Power BI dashboard file
+│── 📄 README.md # Project documentation
+```
 
 
+---
 
+## 📊 Key Analysis  
+
+### 🚀 Ride Insights  
+- Total rides & booking trends over time  
+- Peak hours and demand fluctuations  
+- Ride success vs cancellation ratio  
+
+### ❌ Cancellation Analysis  
+- Customer vs driver cancellations  
+- Top reasons for ride cancellations  
+- Patterns affecting service reliability  
+
+### 💰 Revenue Insights  
+- Revenue breakdown by payment methods  
+- Contribution of different ride types  
+- High-value customers identification  
+
+### 🚗 Vehicle Performance  
+- Most preferred vehicle types  
+- Ride distance analysis  
+- Vehicle-wise revenue contribution  
+
+---
+
+## 📈 Dashboard Features  
+
+- Interactive filters & slicers  
+- KPI cards (Total Rides, Revenue, Cancellations)  
+- Trend analysis (line charts, bar charts)  
+- Customer & driver insights  
+- Dynamic visual storytelling  
+
+---
+
+## 🧠 Key Insights  
+
+- Peak ride demand occurs during office hours  
+- Digital payments dominate revenue contribution  
+- High cancellation rates impact customer experience  
+- Few customers contribute significantly to total revenue  
+- Certain vehicle types generate higher profits  
+
+---
+
+## ▶️ How to Use  
+
+### 1️⃣ Clone the Repository  
+```bash
+git clone https://github.com/surya999610/OLA-Data-Analyst-Project.git
+```
+### 2️⃣ Open SQL File
+Run queries in MySQL Workbench
+Explore insights using SQL
+
+### 3️⃣ Open Power BI Dashboard
+Open ```.pbix ```file in Power BI Desktop
+Interact with dashboard
+
+## 📸 Dashboard Preview
+
+<img width="1743" height="737" alt="OLA Sheet 1" src="https://github.com/surya999610/OLA-Data-Analyst-Project/blob/main/OLA%20Sheet%201.png" />
+<img width="1743" height="737" alt="OLA Sheet 1" src="https://github.com/surya999610/OLA-Data-Analyst-Project/blob/main/OLA%20Sheet%202.png" />
+<img width="1743" height="737" alt="OLA Sheet 1" src="https://github.com/surya999610/OLA-Data-Analyst-Project/blob/main/OLA%20Sheet%203.png" />
+<img width="1743" height="737" alt="OLA Sheet 1" src="https://github.com/surya999610/OLA-Data-Analyst-Project/blob/main/OLA%20Sheet%204.png" />
+<img width="1743" height="737" alt="OLA Sheet 1" src="https://github.com/surya999610/OLA-Data-Analyst-Project/blob/main/OLA%20Sheet%205.png" />
+
+## 💼 Business Impact
+
+This project helps:
+
+- Improve operational efficiency
+- Reduce ride cancellations
+- Enhance customer satisfaction
+- Optimize revenue strategies
+
+## 🚀 Future Improvements
+- Add real-time data integration
+- Build predictive model for cancellations
+- Deploy dashboard as a web app
+- Integrate Python for advanced analytics
+
+## 👨‍💻 Author
+
+Surya Gautam
+
+🔗 GitHub: https://github.com/surya999610
 
